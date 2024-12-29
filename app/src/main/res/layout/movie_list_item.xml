@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/movieListItemRL"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:paddingVertical="8dp">
+
+<ImageView
+    android:id="@+id/movieThumbnail"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/no_img"
+    android:adjustViewBounds="true"
+    android:maxWidth="100dp"
+    android:scaleType="centerCrop"/>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_toEndOf="@+id/movieThumbnail"
+    android:paddingStart="10dp"
+    android:layout_centerVertical="true">
+
+    <TextView
+        android:id="@+id/movieTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Squid Game 2"
+        android:textColor="@color/secondary"
+        android:fontFamily="@font/lemonmilk_bold"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/movieReleaseDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="26 Desember 2024"
+        android:textColor="@color/secondary"
+        android:fontFamily="@font/lemonmilk_light"
+        android:textSize="14sp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/movieRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9"
+            android:textColor="@color/secondary"
+            android:fontFamily="@font/lemonmilk_medium"
+            android:textSize="13sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/star"
+            android:adjustViewBounds="true"
+            android:maxWidth="15dp"
+            android:layout_marginStart="2dp"/>
+    </LinearLayout>
+</LinearLayout>
+
+</RelativeLayout>
